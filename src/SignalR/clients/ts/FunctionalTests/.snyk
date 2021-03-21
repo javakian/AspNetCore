@@ -1,0 +1,35 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.19.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - karma-sauce-launcher > sauce-connect-launcher > https-proxy-agent:
+        patched: '2021-03-21T20:53:23.142Z'
+    - karma-sauce-launcher > saucelabs > https-proxy-agent:
+        patched: '2021-03-21T20:53:23.142Z'
+  SNYK-JS-LODASH-567746:
+    - karma > lodash:
+        patched: '2021-03-21T20:53:23.142Z'
+    - karma-ie-launcher > lodash:
+        patched: '2021-03-21T20:53:23.142Z'
+    - karma > combine-lists > lodash:
+        patched: '2021-03-21T20:53:23.142Z'
+    - karma-sauce-launcher > sauce-connect-launcher > lodash:
+        patched: '2021-03-21T20:53:23.142Z'
+    - karma-sauce-launcher > wd > lodash:
+        patched: '2021-03-21T20:53:23.142Z'
+    - karma-sauce-launcher > sauce-connect-launcher > async > lodash:
+        patched: '2021-03-21T20:53:23.142Z'
+    - karma-sauce-launcher > wd > archiver > lodash:
+        patched: '2021-03-21T20:53:23.142Z'
+    - karma-sauce-launcher > wd > async > lodash:
+        patched: '2021-03-21T20:53:23.142Z'
+    - karma-sauce-launcher > wd > archiver > async > lodash:
+        patched: '2021-03-21T20:53:23.142Z'
+    - karma-sauce-launcher > wd > archiver > archiver-utils > lodash:
+        patched: '2021-03-21T20:53:23.142Z'
+    - karma-sauce-launcher > wd > archiver > zip-stream > lodash:
+        patched: '2021-03-21T20:53:23.142Z'
+    - karma-sauce-launcher > wd > archiver > zip-stream > archiver-utils > lodash:
+        patched: '2021-03-21T20:53:23.142Z'
