@@ -7,7 +7,8 @@
   "dependencies": {
     "@microsoft/signalr": "link:../signalr",
     "@microsoft/signalr-protocol-msgpack": "link:../signalr-protocol-msgpack",
-    "msgpack5": "^4.0.2"
+    "msgpack5": "^4.5.1",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@types/debug": "0.0.30",
@@ -18,7 +19,7 @@
     "es6-promise": "^4.2.4",
     "jasmine": "^3.2.0",
     "jasmine-core": "^3.2.1",
-    "karma": "^3.0.0",
+    "karma": "^6.3.16",
     "karma-chrome-launcher": "^2.2.0",
     "karma-edge-launcher": "^0.4.2",
     "karma-firefox-launcher": "^1.1.0",
@@ -49,11 +50,14 @@
     "test:local": "yarn run pretest && ts-node --project ./scripts/tsconfig.json ./scripts/run-tests.ts",
     "test:all": "yarn run pretest && ts-node --project ./scripts/tsconfig.json ./scripts/run-tests.ts --all-browsers",
     "test:sauce": "yarn run pretest && ts-node --project ./scripts/tsconfig.json ./scripts/run-tests.ts --sauce",
-    "sauce": "yarn run test:sauce"
+    "sauce": "yarn run test:sauce",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "resolutions": {
     "lodash": ">=4.7.14"
   },
   "author": "",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "snyk": true
 }
