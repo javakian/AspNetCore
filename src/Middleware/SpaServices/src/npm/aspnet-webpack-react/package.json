@@ -18,9 +18,9 @@
   },
   "devDependencies": {
     "@types/webpack": "^4.4.0",
-    "rimraf": "^2.5.4",
+    "rimraf": "^4.0.0",
     "typescript": "^2.0.0",
-    "webpack": "^4.16.0"
+    "webpack": "^5.1.1"
   },
   "peerDependencies": {
     "webpack": "^4.0.0"
