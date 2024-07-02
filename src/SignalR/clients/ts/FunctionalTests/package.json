@@ -27,7 +27,7 @@
     "karma-junit-reporter": "^1.2.0",
     "karma-mocha-reporter": "^2.2.5",
     "karma-safari-launcher": "^1.0.0",
-    "karma-sauce-launcher": "^1.2.0",
+    "karma-sauce-launcher": "^4.1.5",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-summary-reporter": "^1.6.0",
     "rxjs": "^6.3.3",
