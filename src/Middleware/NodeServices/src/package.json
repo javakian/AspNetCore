@@ -6,7 +6,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "author": "Microsoft",
   "license": "Apache-2.0",
@@ -16,5 +18,9 @@
     "typescript": "^3.0.1",
     "webpack": "^4.17.1",
     "webpack-cli": "^3.1.0"
+  },
+  "snyk": true,
+  "dependencies": {
+    "@snyk/protect": "latest"
   }
 }
